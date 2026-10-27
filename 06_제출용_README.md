@@ -243,7 +243,7 @@ application.properties => app.db.file=${DB_FILE:data/board.sqlite}
 * 인증되지 않은 요청이나 유효하지 않은 토큰을 이용한 보호 API 요청이 서버에서 거부되는 것을 확인했습니다.
 
 (6) 전체 T01~T17 결과와 증거
-* [T01~T17 테스트 결과 및 증거](<docs/CRUD 및 로그인 구현 (202412937).pdf>) (23페이지부터)
+* [T01~T17 테스트 결과 및 증거](<docs/CRUD 및 로그인 구현(202412937).pdf>) (23페이지부터)
 
 (7) 수동 테스트 재현 절차
 1) 백엔드와 프론트엔드 서버를 실행합니다.
@@ -282,7 +282,7 @@ application.properties => app.db.file=${DB_FILE:data/board.sqlite}
 - AI 사용 여부: 사용
 - 도구와 사용 목적: ChatGPT를 활용하여 JWT 인증 구조 이해, Java 및 JavaScript 코드 이해, 테스트 절차 진행
 - 반영 위치와 직접 수정,검증한 내용: AuthService.java, BoardController.java, api.js 등 JWT 인증과 게시글 처리 관련 코드를 검토 및 수정했습니다. 이후 Microsoft Edge 개발자 도구와 Postman을 통해 실제 API 응답과 기능 동작을 확인했습니다.
-- 상세 활용 기록: [AI 상세 활용 기록](<docs/CRUD 및 로그인 구현 ( 202412937 ).pdf>) (57페이지부터)
+- 상세 활용 기록: [AI 상세 활용 기록](<docs/CRUD 및 로그인 구현(202412937).pdf>) (57페이지부터)
 
 ## 제출 확인
 
