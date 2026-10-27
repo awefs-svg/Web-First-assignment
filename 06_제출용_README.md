@@ -9,7 +9,7 @@
 
 ## 보고서와 테스트 증거
 
-- [구현 보고서 PDF](<docs/CRUD 및 로그인 구현 ( 202412937 ).pdf>)
+- [구현 보고서 PDF](<docs/CRUD 및 로그인 구현 (202412937).pdf>)
 - [테스트 증거 폴더](<docs/CRUD 및 로그인 구현 ( 사진 )/>)
 
 
@@ -243,13 +243,13 @@ application.properties => app.db.file=${DB_FILE:data/board.sqlite}
 * 인증되지 않은 요청이나 유효하지 않은 토큰을 이용한 보호 API 요청이 서버에서 거부되는 것을 확인했습니다.
 
 (6) 전체 T01~T17 결과와 증거
-* [T01~T17 테스트 결과 및 증거](<docs/CRUD 및 로그인 구현 ( 202412937 ).pdf>) (23페이지부터)
+* [T01~T17 테스트 결과 및 증거](<docs/CRUD 및 로그인 구현 (202412937).pdf>) (23페이지부터)
 
 (7) 수동 테스트 재현 절차
 1) 백엔드와 프론트엔드 서버를 실행합니다.
 2) 로그인하지 않은 상태에서 게시글 목록과 상세 조회를 확인합니다.
 3) Alice 계정으로 로그인한 뒤 게시글을 작성하고 수정·삭제합니다.
-4) Bob 계정으로 로그인하여 Alice 게시글에 대한 수정·삭제를 시도하고 HTTP 403을 확인합니다.
+4) Bob 계정으로 로그인하여 Alice 게시글에 대한 수정,삭제를 시도하고 HTTP 403을 확인합니다.
 5) Authorization 헤더 없이 보호 API를 요청하여 HTTP 401을 확인합니다.
 6) 변조되거나 만료된 JWT로 보호 API를 요청하여 인증 오류를 확인합니다.
 7) 존재하지 않는 게시글 ID로 요청하여 HTTP 404를 확인합니다.
@@ -281,7 +281,7 @@ application.properties => app.db.file=${DB_FILE:data/board.sqlite}
 
 - AI 사용 여부: 사용
 - 도구와 사용 목적: ChatGPT를 활용하여 JWT 인증 구조 이해, Java 및 JavaScript 코드 이해, 테스트 절차 진행
-- 반영 위치와 직접 수정·검증한 내용: AuthService.java, BoardController.java, api.js 등 JWT 인증과 게시글 처리 관련 코드를 검토 및 수정했습니다. 이후 Microsoft Edge 개발자 도구와 Postman을 통해 실제 API 응답과 기능 동작을 확인했습니다.
+- 반영 위치와 직접 수정,검증한 내용: AuthService.java, BoardController.java, api.js 등 JWT 인증과 게시글 처리 관련 코드를 검토 및 수정했습니다. 이후 Microsoft Edge 개발자 도구와 Postman을 통해 실제 API 응답과 기능 동작을 확인했습니다.
 - 상세 활용 기록: [AI 상세 활용 기록](<docs/CRUD 및 로그인 구현 ( 202412937 ).pdf>) (57페이지부터)
 
 ## 제출 확인
